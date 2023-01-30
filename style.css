@@ -35,13 +35,12 @@ main
 }
 .info 
 {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
     width: 60%;
     box-sizing: border-box;
     padding-left: 2em;
     padding-right: 2em;
     padding-top: 1em;
+    padding-bottom: 1em;
 }
 .img 
 {
@@ -92,3 +91,24 @@ h5
     justify-self: end;
     align-self: center;
 }
+ @media (min-width:1600px)
+ {
+    h2 
+    {
+        font-size: 1.5rem;
+    }
+    p 
+    {
+        font-size: 1rem;
+    }
+    .imgMichelle
+    {
+        width: 3em;
+        height: 3em;
+    }
+    h4, h5 
+    {
+        font-size: 1rem;
+        margin-left: 1em;
+    }
+ }
