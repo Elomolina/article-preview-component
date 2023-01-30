@@ -35,6 +35,7 @@ main
 }
 .info 
 {
+    display: grid;
     width: 60%;
     box-sizing: border-box;
     padding-left: 2em;
