@@ -69,6 +69,7 @@ p
 {
     display: grid;
     grid-template-columns:50px 1fr 1fr;
+    position: relative;
 }
 h4, h5 
 {
@@ -91,6 +92,46 @@ h5
     justify-self: end;
     align-self: center;
 }
+.icono
+{
+    width:15px; 
+    height: 15px;
+}
+.shareLogos 
+{
+    display: none;
+    
+} 
+.shareLogos h4 
+{
+    display: inline;
+    color: rgb(209, 200, 200);
+    letter-spacing: 2px;
+    margin-right: 1.3em;
+    
+}
+.appear 
+{
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
+    display: flex;
+    gap:10px;
+    padding: 0.5em;
+    background-color: hsl(217, 19%, 35%);
+    position: absolute;
+    top:-40px;
+    right:-50px;
+    animation-name: appear;
+    animation-duration: 1s;
+}
+@keyframes appear {
+
+   
+        from {opacity: 0;}
+        to {opacity: 1;}
+     
+  }
+
  @media (min-width:1600px)
  {
     h2 
@@ -111,4 +152,31 @@ h5
         font-size: 1rem;
         margin-left: 1em;
     }
- }
+}
+@media(min-width:601px) and (max-width:1000px)
+{
+    main 
+    {
+        width:70%;
+
+    }
+    h2, p 
+    {
+        font-size: 1.5rem;
+    }
+    .imgMichelle 
+    {
+        width:5em;
+        height: 5em;
+    }
+    h4,h5 
+    {
+        margin-left: 3em;
+        font-size: 0.9rem;
+    }
+    .share 
+    {
+        width:1.5em;
+        height: 1.5em;
+    }
+}
